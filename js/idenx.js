@@ -17,6 +17,10 @@ const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0.1976 �
 
 const prezzoBiglietto = km * 0.1976;
 
+// per verificare che funzioni questo operazionde del biglietto farò una console.log
+
+console.log('Il prezzo del biglietto é :' + prezzoBiglietto);
+
 //applichiamo uno sconto del 17.65% per i minorenni
 
 
