@@ -22,5 +22,9 @@ STEPS:
 
 const buttonElement = document.querySelector('button');
 
+buttonElement.addEventListener('click',function(){
+
+});
+
 let km = document.getElementById('km').value;
 console.log('km: ' + km);
