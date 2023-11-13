@@ -16,6 +16,7 @@ const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0.1976 �
 // inseriamo un input prezzoBiglietto * 0.1976€ al Km
 
 const prezzoBiglietto = km * 0.1976;
+let prezzoFinale;
 
 // per verificare che funzioni questo operazionde del biglietto farò una console.log
 
