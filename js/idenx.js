@@ -12,3 +12,14 @@
 
 const eta = parseInt( prompt ('Quanti Anni Hai?'));
 const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0.1976 €'));
+
+// inseriamo un input prezzoBiglietto * 0.1976€ al Km
+
+const prezzoBiglietto = km * 0.1976;
+
+//applichiamo uno sconto del 17.65% per i minorenni
+
+
+
+
+//applichiamo uno sconto del 43.27% per gli over65
