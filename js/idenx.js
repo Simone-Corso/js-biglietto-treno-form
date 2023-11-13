@@ -31,8 +31,12 @@ if (eta < 18){
     prezzoFinale = prezzoBiglietto - sconto
     console.log("Il costo del biglietto è :" + prezzoFinale);
 }
-
-
-
-
 //applichiamo uno sconto del 43.27% per gli over65
+
+else if (eta > 65){
+    console.log("L'utente è magiorenne");
+    const sconto = prezzoBiglietto * 43.27 / 100
+    console.log("Lo sconto del biglietto è :" + sconto);
+    prezzoFinale = prezzoBiglietto - sconto
+    console.log("Il costo del biglietto è :" + prezzoFinale);
+}
