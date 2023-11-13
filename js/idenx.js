@@ -7,3 +7,8 @@
 //MILESTONE 1:
  //Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra.
 //La risposta finale (o output) sarà anch’essa da scrivere in console.
+
+//Quanti km vuoi fare e quanti anni hai?
+
+const eta = parseInt( prompt ('Quanti Anni Hai?'));
+const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0.1976 €'));
