@@ -21,8 +21,11 @@ const prezzoBiglietto = km * 0.1976;
 
 console.log('Il prezzo del biglietto é :' + prezzoBiglietto);
 
-
 //applichiamo uno sconto del 17.65% per i minorenni
+
+if (eta < 18){
+    console.log("L'utente è minorenne");
+}
 
 
 
