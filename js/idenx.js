@@ -26,6 +26,7 @@ console.log('Il prezzo del biglietto é :' + prezzoBiglietto);
 if (eta < 18){
     console.log("L'utente è minorenne");
     const sconto = prezzoBiglietto * 17.65 / 100
+    console.log("Lo sconto del biglietto è :" + sconto);
 }
 
 
