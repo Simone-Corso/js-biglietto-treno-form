@@ -10,33 +10,3 @@
 
 //Quanti km vuoi fare e quanti anni hai?
 
-const eta = parseInt( prompt ('Quanti Anni Hai?'));
-const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0.1976 €'));
-
-// inseriamo un input prezzoBiglietto * 0.1976€ al Km
-
-const prezzoBiglietto = km * 0.1976;
-let prezzoFinale;
-
-// per verificare che funzioni questo operazionde del biglietto farò una console.log
-
-console.log('Il prezzo del biglietto é :' + prezzoBiglietto);
-
-//applichiamo uno sconto del 17.65% per i minorenni
-
-if (eta < 18){
-    console.log("L'utente è minorenne");
-    const sconto = prezzoBiglietto * 17.65 / 100
-    console.log("Lo sconto del biglietto è :" + sconto);
-    prezzoFinale = prezzoBiglietto - sconto
-    console.log("Il costo del biglietto è :" + prezzoFinale);
-}
-//applichiamo uno sconto del 43.27% per gli over65
-
-else if (eta > 65){
-    console.log("L'utente è magiorenne");
-    const sconto = prezzoBiglietto * 53.27 / 100
-    console.log("Lo sconto del biglietto è :" + sconto);
-    prezzoFinale = prezzoBiglietto - sconto
-    console.log("Il costo del biglietto è :" + prezzoFinale);
-}
