@@ -22,7 +22,10 @@ STEPS:
 
 const buttonElement = document.querySelector('button');
 
-buttonElement.addEventListener('click',function(){
+buttonElement.addEventListener('click', function(){
+    console.log('inizio della funzione');
+    alert("i dati inseriti dall'utente");
+    console.log('fine della funzione');
 
 });
 
