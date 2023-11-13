@@ -23,16 +23,18 @@ STEPS:
 const buttonElement = document.querySelector('button');
 
 buttonElement.addEventListener('click', function(){
-
+    let km = document.getElementById('km').value;
+    console.log('km: ' + km);
     const prezzoBiglietto = km * 0.1976;
-let prezzoFinale;
+    let prezzoFinale;
 
 // per verificare che funzioni questo operazionde del biglietto farò una console.log
 
 console.log('Il prezzo del biglietto é :' + prezzoBiglietto);
 
 //applichiamo uno sconto del 17.65% per i minorenni
-
+let eta = document.getElementById('eta').value;
+    console.log('eta: ' + eta);
 if (eta < 18){
     console.log("L'utente è minorenne");
     const sconto = prezzoBiglietto * 17.65 / 100
@@ -50,13 +52,10 @@ else if (eta > 65){
     console.log("Il costo del biglietto è :" + prezzoFinale);
 }
 
-
-    let km = document.getElementById('km').value;
-    console.log('km: ' + km);
-    let eta = document.getElementById('eta').value;
-    console.log('eta: ' + eta);
+    
     console.log('inizio della funzione');
     alert("i dati inseriti dall'utente");
     console.log('fine della funzione');
 });
 
+document.getElementById("click").innerHTML = "Costo del biglietto" + prezzoFinale;
